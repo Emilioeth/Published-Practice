@@ -38,6 +38,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .main-title {
@@ -118,51 +120,71 @@ header h1 {
 }
 
 .results-box {
-    border: solid 5px var(--mp-blue);
     width: 80%; 
     position: absolute;  
     top: -210px;
-    height: 68vh;
+    
+}
+
+.results-body {
+    height: 55vh;
+    border: solid 5px var(--mp-blue);
 }
 
 .results-title {
     text-align: center;
-    border-bottom: solid 5px var(--mp-blue);
+    border-left: solid 5px var(--mp-blue);
+    border-right: solid 5px var(--mp-blue);
+    border-top: solid 5px var(--mp-blue);
+}
+
+.results-title h3 {
+    margin: 0px;
+    padding: 1.9466666667rem 0 1.168rem 0;
 }
 
 /* Results Style End */
 
 /* TextArea Style Start */
 
-.text-box-div textarea {
-    border: solid 5px var(--mp-blue);
-    height: 58.3vh;
-    position: absolute;
-    top: -130px;
-    width: 95%;
+.text-section-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.text-box-div {
+    position: relative;
+    top: -131px;
+    width: 93%;
+    height: 55vh;
+}
+
+.textarea-div, .textarea-div textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.textarea-div textarea {
+    border: 5px solid var(--mp-blue);
     text-align: center;
 }
 
 .title-and-buttons {
+    position: absolute;
+    top: -85px;
     display: flex;
     justify-content: space-between;
-    width: 92%;
+    align-items: baseline;
+    width: 100%;
+    height: 70px;
 }
 
 .text-buttons {
     display: flex;
-    position: absolute;
-    left: 550px;
-    bottom: 135px;
-}
-
-.text-area-title h3 {
-    position: absolute;
-    bottom: 131px;
 }
 
 .textarea-btn {
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px 11px;
 }
 
@@ -178,7 +200,7 @@ header h1 {
 footer {
     position:absolute;
     bottom:0;
-    width:100%;
+    width: 100%;
     height:100px;  
     background:var(--fifth-color);
     border-top: solid 3px var(--mp-blue);
@@ -196,3 +218,5 @@ footer {
  }
 
 /* Footer Style End */
+
+@media (max-width: 900px) {}
