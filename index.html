@@ -4,125 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>RhymeBlock</title>
+    <title>Z-Theory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
-
 <body>
-
+ 
     <header>
-        <div class="main-title">
-            <h1 class="page-title">RhymeBlock</h1><i class="fa-solid fa-book"></i>
-        </div>
+        <p>
+            <a>
+                Contact
+            </a>
+        </p>
+
+        <p>
+            <a>
+                Info
+            </a>
+        </p>
     </header>
 
-    <main class="container-main">
+    <main class="projects-container">
 
-        <div class="container-inputs">
-            <div class="row">
-                <div class="col m3 s5">
-                    <div class="word-input">
-                        <input type="text" name="word-input" placeholder="Enter Your Word" autocomplete="off" class="browser-default" />
-                    </div>
-                </div>
-            </div>
+        <div class="hero">
+            <video autoplay loop muted plays-inline class="video-hero">
+                <source src="./assets/images/hero-video.mp4" type="video/mp4">
+            </video>
 
-            <div class="row">
-                <div class="col m3 s5">
-                    <div class="options-input">
-                        <select name="options-input" class="options-select browser-default">
-                            <option value="" disabled selected>What're you looking for ?</option>
-                            <option value="eRhymes">Exact Rhymes</opttion>
-                            <option value="aRhymes">Approximate Rhymes</option>
-                            <option value="Homophones">Homophones</option>
-                            <option value="Consonant">Consonant Match</option>
-                            <options values="Definition">Definition</options>
-                            <option value="Synonyms">Synonyms</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+            <h1 class="animate__animated animate__fadeIn animate__delay-1s">
+                Z-Theory
+            </h1>
 
-            <div class="row">
-                <div class="col m3 s5">
-                    <div class="search-btn">
-                        <button class="btn btn-search" id="" type="submit">Search!</button>
-                    </div>
-                </div>
-            </div>
+            <h2 class="animate__animated animate__fadeIn animate__delay-2s">
+                Experiment with your future
+            </h2>
+            
+            <p class="animate__animated animate__fadeIn animate__delay-2s">
+                Projects
+            </p>
+            
+            <i class="fa-solid fa-arrow-down-long" id="arrow-proj"></i>
 
         </div>
 
-        <div class="container-results">
-            <div class="row">
-                <div class="col s5 m4 push-m3 results-wrap">
-                    <div class="results-box">
-                        <div class="results-title">
-                            <h3> Results </h3>
-                        </div>
+    
+        <div class="project-1 projects">
+            <div class="project-body">
 
-                        <div class="results-body">
+                <div class="body-section-info bmashup">
+                    <h2>
+                        Mashup
+                    </h2>
+                    <p>
+                        Mashup Digial art collection gallery. Geometrically based Clean, Abstract, & Minimalistic digitally designed & created artwork.
+                    </p>
+                    <button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
 
-                            <ul>
-                                <li>
-
-                                </li>
-                            </ul>
-
-                        </div>
-
+                <div class="body-section-imgs imashup">
+                    <div class="img1 single-img">
+                        <img src="./assets/images/mashup-img1.webp" alt="project 1 image 1">
+                    </div>
+                    <div class="img2 single-img">
+                        <img src="./assets/images/mashup-img2.png" alt="project 1 image 2">
                     </div>
                 </div>
+                
             </div>
-
         </div>
 
-        <div class="container-textbox">
-            <div class="row">
-                <div class="col s7 push-s5 m5 push-m7 text-section-wrapper">
-                    <div class="text-box-div">
+        <div class="project-2 projects">
+            <div class="project-body">
 
-                        <div class="title-and-buttons">
+                <div class="body-section-info bnovozco">
+                    <h2>
+                        Novozco
+                    </h2>
+                    <p>
+                        Novozco Pools is a fast growing pool business that was in need of digitalization, they were looking for a beautiful and simple website that would portray a modern yet professional look for their online presence.
+                    </p>
+                    <button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
 
-                            <div class="text-area-title">
-                                <h3>Your Song</h3>
-                            </div>
-
-                            <div class="text-buttons">
-
-                                <div class="textarea-btn new-btn">
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </div>
-                                <div class="textarea-btn save-btn">
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                </div>
-                                <div class="textarea-btn copy-btn">
-                                    <i class="fa-solid fa-clipboard"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="textarea-div">
-                                <textarea id="task-area" style="resize: none;">
-                                </textarea>
-                            </div>
+                <div class="body-section-imgs inovozco">
+                    <div class="img1 single-img">
+                        <img src="./assets/images/novozco-img1.png" alt="project 1 image 1">
+                    </div>
+                    <div class="img2 single-img">
+                        <img src="./assets/images/novozco-img2.jpg" alt="project 1 image 2">
                     </div>
                 </div>
+                
             </div>
+        </div>
 
+        <div class="project-3 projects">
+
+            <video autoplay loop muted plays-inline class="video-figura">
+                <source src="./assets/images/figurabg.mp4" type="video/mp4">
+            </video>
+            
+            <div class="project-body body-figura">
+                <div class="body-section-info bfigura">
+                    <h2>
+                        Figura
+                    </h2>
+                    <p>
+                        Figura is a realistic modern sculpture 3D art gallery, digitally owned, designed and created. 
+                    </p>
+                    <button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="body-section-imgs ifigura">
+                    <div class="img1 single-img">
+                        <img src="./assets/images/Figura-img1.webp" alt="project 1 image 1">
+                    </div>
+                    <div class="img2 single-img">
+                        <img src="./assets/images/Figura-img2.webp" alt="project 1 image 2">
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
     </main>
 
-    <footer>
-        <h3>Made By <span>snAAAYke</span></h3>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-
+<script src="./assets/js/jquery-3.6.1.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
-
 </html>

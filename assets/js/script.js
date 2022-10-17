@@ -1,17 +1,190 @@
-https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+const mainContainer = document.querySelector('.projects-container');
+const videoFigura = document.querySelector('.video-figura');
+const hero = document.querySelector('.hero');
+const projects = document.querySelector('.projects');
+const project1 = document.querySelector('.project-1');
+const project2 = document.querySelector('.project-2');
+const project3 = document.querySelector('.project-3');
+const arrowProj = document.querySelector('#arrow-proj');
+const infoProj1 = document.querySelector('.body-section-info.bmashup');
+const imgProj1 = document.querySelector('.body-section-imgs.imashup');
+const infoProj2 = document.querySelector('.body-section-info.bnovozco');
+const imgProj2 = document.querySelector('.body-section-imgs.inovozco');
+const infoProj3 = document.querySelector('.body-section-info.bfigura');
+const imgProj3 = document.querySelector('.body-section-imgs.ifigura');
 
-api.datamuse.com/words
-api.datamuse.com/sug //autocomplete function on search input fields
+window.onload = () => {
+    
+    mainContainer.style.height = ''+window.innerHeight+'px'
+    hero.style.height = ''+window.innerHeight+'px'
+    project1.style.height = ''+window.innerHeight+'px'
+    project2.style.height = ''+window.innerHeight+'px'
+    project3.style.height = ''+window.innerHeight+'px'
 
-/*
-rhy	-Rhymes ("perfect" rhymes, per RhymeZone)	spade → aid
-nry	-Approximate rhymes (per RhymeZone)	forest → chorus
-hom	-Homophones (sound-alike words)	course → coarse
-cns	-Consonant match
-syn	-Synonyms (words contained within the same WordNet synset)
-*/
+    if ((window.innerWidth <= 1000 ) && (window.innerWidth > 750) ){
+        project1.style.height = ''+window.innerWidth * 1.25+'px'
+        project2.style.height = ''+window.innerWidth * 1.25+'px'
+        project3.style.height = ''+window.innerWidth * 1.25+'px'
+    }
+    else if (window.innerWidth <= 750 ) {
+        project1.style.height = '720px'
+        project2.style.height = '720px'
+        project3.style.height = '720px'
+    }
 
-// supposed to make the textbox responsive
-$('#textarea1').val('New Text');
-M.textareaAutoResize($('#textarea1'));
+    setTimeout(() => {
+        arrowProj.style.opacity = '1'
+    }, 1000);
 
+}
+window.onresize = () => {
+    
+    mainContainer.style.height = ''+window.innerHeight+'px'
+    hero.style.height = ''+window.innerHeight+'px'
+    project1.style.height = ''+window.innerHeight+'px'
+    project2.style.height = ''+window.innerHeight+'px'
+    project3.style.height = ''+window.innerHeight+'px'
+
+    if ((window.innerWidth <= 1000 ) && (window.innerWidth > 750) ){
+        project1.style.height = ''+window.innerWidth * 1.25+'px'
+        project2.style.height = ''+window.innerWidth * 1.25+'px'
+        project3.style.height = ''+window.innerWidth * 1.25+'px'
+    }
+    else if (window.innerWidth <= 750 ) {
+        project1.style.height = '720px'
+        project2.style.height = '720px'
+        project3.style.height = '720px'
+    }
+}
+
+
+
+mainContainer.addEventListener('scroll', function() {
+
+    let vh = 100 * ($('.projects-container').scrollTop() / window.innerHeight);
+    let vw = 100 * ($('.projects-container').scrollTop() / window.innerWidth);
+
+    console.log($('.projects-container').scrollTop())
+
+    let showing1 = false
+    let showing2 = false
+    let showing3 = false
+
+
+    if (!showing1) {
+        if (window.innerWidth > 1000){
+            if(vh >= 55) {
+                infoProj1.style.opacity = '1';
+                imgProj1.style.opacity = '1';
+    
+                infoProj1.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj1.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing1 = true
+            }
+        }
+        else if ((window.innerWidth <= 1000 ) && (window.innerWidth > 750)){
+            if(vh >= 55) {
+                infoProj1.style.opacity = '1';
+                imgProj1.style.opacity = '1';
+    
+                infoProj1.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj1.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing1 = true
+            }
+        }
+        else if (window.innerWidth <= 750 ) {
+            if(vh >= 55) {
+                infoProj1.style.opacity = '1';
+                imgProj1.style.opacity = '1';
+    
+                infoProj1.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj1.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing1 = true
+            }
+        }
+    }
+
+    if (!showing2) {
+        if (window.innerWidth > 1000){
+            if(vh >= 155) {
+                infoProj2.style.opacity = '1';
+                imgProj2.style.opacity = '1';
+    
+                infoProj2.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj2.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing2 = true
+            }
+        }
+        else if ((window.innerWidth <= 1000 ) && (window.innerWidth > 750)){
+            if(vw >= 165) {
+                infoProj2.style.opacity = '1';
+                imgProj2.style.opacity = '1';
+    
+                infoProj2.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj2.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing2 = true
+            }
+        }
+        else if (window.innerWidth <= 750 ) {
+            if($('.projects-container').scrollTop() >= 1100) {
+                infoProj2.style.opacity = '1';
+                imgProj2.style.opacity = '1';
+    
+                infoProj2.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj2.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing2 = true
+            }
+        }
+    }
+
+    if (!showing3) {
+        if (window.innerWidth > 1000){
+            if(vh >= 255) {
+                infoProj3.style.opacity = '1';
+                imgProj3.style.opacity = '1';
+    
+                infoProj3.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj3.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing3 = true
+            }
+        }
+        else if ((window.innerWidth <= 1000 ) && (window.innerWidth > 750)){
+            if(vw >= 290) {
+                infoProj3.style.opacity = '1';
+                imgProj3.style.opacity = '1';
+    
+                infoProj3.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj3.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing3 = true
+            }
+        }
+        else if (window.innerWidth <= 750 ) {
+            if($('.projects-container').scrollTop() >= 1820) {
+                infoProj3.style.opacity = '1';
+                imgProj3.style.opacity = '1';
+    
+                infoProj3.classList.add('animate__animated', 'animate__fadeInLeft');
+                imgProj3.classList.add('animate__animated', 'animate__flipInX');
+    
+                showing3 = true
+            }
+        }
+    }
+
+
+    if (vh > 130){
+        videoFigura.classList.add ('show')
+    }
+    else {
+        videoFigura.classList.remove('show')
+    }
+
+});
