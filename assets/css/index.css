@@ -169,7 +169,6 @@ header p a {
     background-image: url('../images/mashup-bg.png');
     background-size: cover;
     background-position: 80%;
-    background-attachment: fixed;
 }
 .project-1:after {
     content: '';
