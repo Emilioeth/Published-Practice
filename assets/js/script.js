@@ -27,9 +27,9 @@ window.onload = () => {
         project3.style.height = ''+window.innerWidth * 1.25+'px'
     }
     else if (window.innerWidth <= 750 ) {
-        project1.style.height = '720px'
-        project2.style.height = '720px'
-        project3.style.height = '720px'
+        project1.style.height = ''+window.innerHeight+'px'
+        project2.style.height = ''+window.innerHeight+'px'
+        project3.style.height = ''+window.innerHeight+'px'
     }
 
     setTimeout(() => {
@@ -37,8 +37,11 @@ window.onload = () => {
     }, 1000);
 
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
-        project1.style.backgroundAttachment = 'local'
-        project2.style.backgroundAttachment = 'local'
+
+       // if (window.innerWidth > 500){
+         //  project1.style.backgroundAttachment = 'local'
+         //   project2.style.backgroundAttachment = 'local'
+        // }
     }
 
 }
@@ -56,9 +59,9 @@ window.onresize = () => {
         project3.style.height = ''+window.innerWidth * 1.25+'px'
     }
     else if (window.innerWidth <= 750 ) {
-        project1.style.height = '720px'
-        project2.style.height = '720px'
-        project3.style.height = '720px'
+        project1.style.height = ''+window.innerHeight+'px'
+        project2.style.height = ''+window.innerHeight+'px'
+        project3.style.height = ''+window.innerHeight+'px'
     }
 }
 
@@ -69,7 +72,7 @@ mainContainer.addEventListener('scroll', function() {
     let vh = 100 * ($('.projects-container').scrollTop() / window.innerHeight);
     let vw = 100 * ($('.projects-container').scrollTop() / window.innerWidth);
 
-    console.log($('.projects-container').scrollTop())
+    console.log(vh)
 
     let showing1 = false
     let showing2 = false
@@ -136,7 +139,7 @@ mainContainer.addEventListener('scroll', function() {
             }
         }
         else if (window.innerWidth <= 750 ) {
-            if($('.projects-container').scrollTop() >= 1100) {
+            if(vh >= 150) {
                 infoProj2.style.opacity = '1';
                 imgProj2.style.opacity = '1';
     
@@ -172,7 +175,7 @@ mainContainer.addEventListener('scroll', function() {
             }
         }
         else if (window.innerWidth <= 750 ) {
-            if($('.projects-container').scrollTop() >= 1820) {
+            if(vh >= 250) {
                 infoProj3.style.opacity = '1';
                 imgProj3.style.opacity = '1';
     
@@ -185,7 +188,7 @@ mainContainer.addEventListener('scroll', function() {
     }
 
 
-    if (vh > 130){
+    if (vh > 200){
         videoFigura.classList.add ('show')
     }
     else {

@@ -166,17 +166,15 @@ header p a {
 }
 .project-1 {
     background-color: black;
-    background-image: url('../images/mashup-bg.png');
+    background: url('../images/mashup-bg.png') no-repeat center center fixed;
     background-size: cover;
     background-position: 80%;
-    background-attachment:fixed;
 }
 .project-2 {
     background-color: black;
-    background-image: url('../images/Novozco-banner.png');
+    background: url('../images/Novozco-banner.png') no-repeat center center fixed;
     background-size: cover;
     background-position: 80%;
-    background-attachment: fixed;
 }
 .video-figura {
     position: fixed;
@@ -317,6 +315,28 @@ header p a {
         right: -350px;
     }
 }
+/*
+@media (max-width: 500px){
+    .project-1:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        background-image: url('../images/mashup-bg.png');
+        background-size: cover;
+        background-position: 80%;
+      }
+      .project-1 {
+        background:transparent;
+      }
+      .project-2{
+        background-attachment: local;
+      }
+} */
 @media (max-width: 450px){
     .hero i {
         font-size: 22px;
