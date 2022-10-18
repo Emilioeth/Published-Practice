@@ -315,7 +315,6 @@ header p a {
         right: -350px;
     }
 }
-/*
 @media (max-width: 500px){
     .project-1:before {
         content: "";
@@ -336,7 +335,7 @@ header p a {
       .project-2{
         background-attachment: local;
       }
-} */
+}
 @media (max-width: 450px){
     .hero i {
         font-size: 22px;

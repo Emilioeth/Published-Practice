@@ -38,10 +38,10 @@ window.onload = () => {
 
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
 
-       // if (window.innerWidth > 500){
-         //  project1.style.backgroundAttachment = 'local'
-         //   project2.style.backgroundAttachment = 'local'
-        // }
+        if (window.innerWidth > 500){
+            project1.style.backgroundAttachment = 'local'
+            project2.style.backgroundAttachment = 'local'
+        }
     }
 
 }
