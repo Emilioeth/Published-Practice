@@ -37,7 +37,8 @@ window.onload = () => {
     }, 1000);
 
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
-        arrowProj.style.color = 'yellow'
+        project1.style.backgroundAttachment = 'local'
+        project2.style.backgroundAttachment = 'local'
     }
 
 }
