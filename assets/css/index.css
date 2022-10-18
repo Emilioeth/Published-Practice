@@ -169,6 +169,7 @@ header p a {
     background-image: url('../images/mashup-bg.png');
     background-size: cover;
     background-position: 80%;
+    background-attachment: fixed;
 }
 .project-1:after {
     content: '';
@@ -189,6 +190,19 @@ header p a {
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
+}
+.project-2:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-position: inherit;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-repeat: inherit;
+    position: fixed;
+    top: 0;
+    z-index: -3;
 }
 .video-figura {
     position: fixed;

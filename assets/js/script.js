@@ -36,6 +36,10 @@ window.onload = () => {
         arrowProj.style.opacity = '1'
     }, 1000);
 
+    if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+        arrowProj.style.color = 'yellow'
+    }
+
 }
 window.onresize = () => {
     
